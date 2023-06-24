@@ -1,0 +1,184 @@
+/*
+  NAME: Zihan Sheng
+  DATE: 06/22/2022
+  TA NAME: NA
+
+  This is the styles.css page for my portfolio of web development work.
+  It is used by all pages in my portfolio to give the site a consistent
+  look and feel.
+*/
+
+@font-face {
+  font-family:"Marker";
+  src: url("markerfelt.ttc") format("truetype");
+}
+
+/*
+  Remember: This body ruleset is to get you started, but does not count
+  towards the CP requirements!
+*/
+body {
+  background-image: linear-gradient(90deg,rgba(60,10,30,.10) 3%,transparent 0),
+                    linear-gradient(1turn,rgba(60,10,30,.10) 3%,transparent 0);
+  background-size: 20px 20px;
+  background-color: lightyellow;
+  background-position: 50%;
+  font-family: 'Chalkboard', 'Arial Narrow', Arial, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3em;
+  width: 80%; /* set the width of the content */
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Marker, 'Arial Narrow Bold', sans-serif;
+  color: navy;
+}
+
+h1, h2 {
+  margin-top: 3%;
+  margin-bottom: 1%;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  hyphens: auto;
+  text-align: justify;
+}
+
+header {
+  display: flex;
+}
+
+header > img {
+  width: min(35vw, 200px);
+  height: 100%;
+  border-radius: 22%;
+  margin-right: 16px;
+  flex-shrink: 0;
+}
+
+header > div {
+  flex-direction: column;
+  margin-left: 0;
+}
+
+header > div h1 {
+  margin-top: 1%;
+}
+
+header > div address {
+  margin-left: 0;
+  font-style: normal;
+}
+
+header span.tag {
+  text-decoration: none;
+  vertical-align: auto;
+  border-radius: 30px;
+  padding: 8px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 12pt;
+  display: inline-block;
+  background-color: #ccf1ff;
+  color: #375a88;
+}
+
+aside {
+  padding-left: .5rem;
+  margin-top: 3%;
+  margin-right: 3%;
+  margin-left: 3%;
+  float: right;
+  font-size: 80%;
+  color: #375a88;
+  box-shadow: inset 4px 0 0 0 #375a88;
+}
+
+aside p {
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+footer p {
+  font-family: 'Patrick Hand SC', cursive;
+  text-align: center;
+}
+
+div {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+div.column {
+  width: 300px;
+  text-align: center;
+}
+
+div.column > img {
+  border-radius: 10%;
+  height: 100px;
+}
+
+#faces div.column {
+  width: 400px;
+}
+
+#faces div.column > img {
+  height: 400px;
+}
+
+#about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#about > img {
+  width: min(35vw, 200px);
+  height: 100%;
+  border-radius: 10%;
+  margin-right: 3%;
+}
+
+#quote {
+  position: relative;
+  text-align: center;
+}
+
+#quote > header {
+  position: absolute;
+  left: 26%;
+  overflow: hidden;
+  flex-wrap: nowrap;
+}
+
+#quote > img {
+  height: 100%;
+  width: min(75vw, 600px);
+  flex-shrink: 0;
+}
+
+#quote > blockquote p {
+  position: absolute;
+  top: 20%;
+  left: 26%;
+  max-width: 35%;
+}
+
+#quote > cite {
+  position: absolute;
+  top: 70%;
+  left: 53%;
+  font-style: italic;
+}

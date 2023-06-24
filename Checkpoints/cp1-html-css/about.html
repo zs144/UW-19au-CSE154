@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!--
+  NAME: Zihan Sheng
+  DATE: 06/22/2022
+  TA NAME: NA
+
+  This is the index.html page for my portfolio of web development work. It is the
+  home page which lists my basic information, favorite things and courses I am
+  currently taking.
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+    <link href="pics/student.png" rel="icon" sizes="35x35" type="image/svg">
+    <title>Zihan's official page</title>
+  </head>
+  <body>
+    <header>
+      <img src="pics/myself.jpg" alt="profile photo">
+      <div>
+        <h1>
+          Zihan Sheng
+          <span class="tag">Software Engineer</span>
+          <span class="tag">Art Lover</span>
+          <span class="tag">Stoic Person</span>
+        </h1>
+        <address>
+          📮<a href="zihansheng@gmail.com">zihansheng@gmail.com</a>
+          &emsp;
+          📍Durham, NC
+        </address>
+        <p>
+          My name is Zihan Sheng. I am a first-year master's student at Duke University studying
+          electrical and computer engineering. Before that, I earned my bachelor's degree in
+          economics from Central University of Finance and Economics. I have also been to UCLA and
+          some other prestigious institutions for short-term academic programs. Right now, I am
+          here at UW to study CSE154. Why choose this course? Because web programming is awesome!
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>Classes I'm currently taking</h2>
+        <div class="row">
+          <div class="column">
+            <h3>Berkeley CS 61C</h3>
+            <!-- The image is from UC Berkeley -->
+            <img src="pics/berkeley_logo.png" alt="UC Berkeley logo">
+            <p>
+              This is a classic intro course for computer architecture. In Berkeley, this is the third
+              and final course in the intro to CS series. The course comprehends many key components
+              from software to hardware. Even though you may not want to be a hardware engineer, you
+              still had better get yourself familiar with computer architecture, to improve the software
+              performance most cost-effectively. Personally, I can't miss the one-stop chance to learn
+              computer architecture knowledge. Additionally, the lecturer of this course, Dan Garcia,
+              could be the best professor I have ever met.
+            </p>
+          </div>
+          <div class="column">
+            <h3>UW CSE 143</h3>
+            <!-- The image is from University of Washington -->
+            <img src="pics/uw_logo.png" alt="UW logo">
+            <p>
+              The subsequent course for CSE 142. After learning the most basic programming ideas and
+              techniques in CSE 142, this course turns to teaching several fundamental data structures
+              and algorithms. Besides, I can feel that the code I write for each programming assignment
+              is getting longer and more complicated than CSE 142. Therefore, no matter for practice or
+              theory learning, CSE 143 is a must-have course. BTW, the lecturer, Stuart Reges, delivered
+              the lecture in the classroom like a normal class. That's a big plus. I sincerely appreciate
+              his professionlism and kindness.
+            </p>
+          </div>
+          <div class="column">
+            <h3>UW CS 154</h3>
+            <!-- The image is from University of Washington -->
+            <img src="pics/uw_logo.png" alt="UW logo">
+            <p>
+              I feel a bit surprised when I found that UW offers this web programming course since most
+              universities on the same level don't set a specific course for this topic. Some people
+              argue that computer science education in university should focus on the most general CS
+              theory, rather than teaching how to build a very specific application. That claim makes
+              sense, but CSE 154 is more than just web programming. The ultimate object is full-stack
+              development. In addition, we have to learn many languages in a short time and compose
+              many sections together methodically. Those skills are necessary for software engineers.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Five of My Favorite Things</h2>
+        <ul>
+          <li>
+            <strong>Favorite animal:</strong>
+            <a href="owl.html" target="_blank" title="Owl's Wikipedia">Owl</a>
+          </li>
+          <li>
+            <strong>Favorite food:</strong>
+            California roll (click
+            <a href="https://www.easyhomemadesushi.com/why-is-a-california-roll-not-sushi/"
+            title="California roll vs Sushi">here</a> to check out the difference between California
+            rolls and sushi)
+          </li>
+          <li><strong>Favorite TV show:</strong> Young Shelton </li>
+          <li><strong>Favorite hobby:</strong> Watch soccer games (My home team is Inter Milan!) </li>
+          <li><strong>Favorite anime:</strong> Attack on Titan </li>
+        </ul>
+      </section>
+
+      <section ID="faces">
+        <h2>Happy Face & Sad Face</h2>
+        <div class="row">
+          <div class="column">
+            <h3>When I'm happy</h3>
+            <!-- This image was found https://english.news.cn/20220512/c8cb902600df4e94af1f3b4e61779770/c.html -->
+            <img src="pics/happy.jpeg" alt="when I'm happy">
+          </div>
+          <div class="column">
+            <h3>When I'm sad</h3>
+            <!-- This image is cited from Hajime Isayama -->
+            <img src="pics/angry.jpeg" alt="when I'm sad">
+          </div>
+        </div>
+      </section>
+
+      <!--
+        Note: We'll learn about semantic tags more this week, but an article is a good semantic
+        choice here to group the information about a single quote and the author/source. If
+        you want to have multiple quotes, try duplicating this "card UI" structure.
+        -->
+      <section>
+        <h2>One of my favorite quotes</h2>
+        <article ID="quote">
+          <header>
+            <h3>Famous Quotation</h3>
+          </header>
+          <!-- Image by rawpixel.com -->
+          <img src="pics/bookleaf.png" alt="quote background">
+          <blockquote>
+            <p>
+              And now here is my secret, a very simple secret: It is only with the heart that one can
+              see rightly; what is essential is invisible to the eye.
+            </p>
+          </blockquote>
+          <cite>- Little Prince</cite>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+			<hr>
+      <p>
+				Part of images and text on this page &copy; 2022 Zion Sheng, other
+        attributions cited in document or page source
+			</p>
+		</footer>
+  </body>
+</html>
